@@ -11,8 +11,8 @@ public class Scramble {
 		}
 	}
 	public static String scrambleNormal(int scrambleLength, String turnSet, String modSet) throws ScrambleException {
-		if (50 < scrambleLength) {
-			throw new ScrambleException("Scramble too large!");                     // Throw ScrambleException if given length is greater than 50
+		if (100 < scrambleLength) {
+			throw new ScrambleException("Scramble too large!");                     // Throw ScrambleException if given length is greater than 100
 		}
 		if (10 > scrambleLength) {
 			throw new ScrambleException("Scramble too small!");                     // Throw ScrambleException if given length is less than 10
@@ -31,6 +31,7 @@ public class Scramble {
 			turnModifiers.add("");
 		} else {                                                                        // Else, use what the caller specified
 			turnModifiers.addAll(Arrays.asList(modSet.split("\\s+")));
+                        turnModifiers.add("");
 		}
 		for (int i = 0; i < scrambleLength; i++) {                                      // Loop however many times the caller wants it to
 			if (i != 0) {                                                           // Prevent having to catch an ArrayIndexOutOfBounds exception
