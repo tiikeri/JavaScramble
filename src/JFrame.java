@@ -44,6 +44,8 @@ public class JFrame extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jCheckBox1 = new javax.swing.JCheckBox();
+        jRadioButton4 = new javax.swing.JRadioButton();
+        jRadioButton5 = new javax.swing.JRadioButton();
 
         javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
         jFrame1.getContentPane().setLayout(jFrame1Layout);
@@ -177,6 +179,26 @@ public class JFrame extends javax.swing.JFrame {
             }
         });
 
+        buttonGroup1.add(jRadioButton4);
+        jRadioButton4.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jRadioButton4.setText("6x6");
+        jRadioButton4.setRolloverEnabled(false);
+        jRadioButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton4ActionPerformed(evt);
+            }
+        });
+
+        buttonGroup1.add(jRadioButton5);
+        jRadioButton5.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jRadioButton5.setText("Megaminx");
+        jRadioButton5.setRolloverEnabled(false);
+        jRadioButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton5ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -185,44 +207,50 @@ public class JFrame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(4, 4, 4)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(294, Short.MAX_VALUE))
+                        .addComponent(jCheckBox1)
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jRadioButton1)
-                            .addComponent(jRadioButton2)
-                            .addComponent(jRadioButton3)
-                            .addComponent(jCheckBox1))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(36, 36, 36))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jRadioButton1)
+                                    .addComponent(jRadioButton2)
+                                    .addComponent(jRadioButton3)
+                                    .addComponent(jRadioButton4)
+                                    .addComponent(jRadioButton5))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(6, 6, 6)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap())))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jRadioButton1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jRadioButton2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jRadioButton3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jCheckBox1))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jRadioButton4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jRadioButton5))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(49, 49, 49)
+                .addComponent(jCheckBox1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
                     .addComponent(jLabel1)
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -244,24 +272,55 @@ public class JFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jRadioButton3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if("rubik".equals(cube)){
-            String text = null;
-            try {
-            if( jCheckBox1.isSelected()){
-                text = Scramble.scrambleNormal(Integer.parseInt(jTextField1.getText()), "F R U", "defaultSet");
+
+        String text = null;
+        try {
+            if (true){
+                if("rubik".equals(cube)){
+                    if(jCheckBox1.isSelected()){
+                        text = Scramble.scrambleNormal(Integer.parseInt(jTextField1.getText()), "R F U", "defaultSet");
+                    }else{
+                    text = Scramble.scrambleNormal(Integer.parseInt(jTextField1.getText()), "R L U F D B", "defaultSet");
+                    }
+                }
+                if("professor".equals(cube)){
+                    if(jCheckBox1.isSelected()){
+                        text = Scramble.scrambleNormal(Integer.parseInt(jTextField1.getText()), "R r 2R U u 2U F f 2F", "defaultSet");
+                    }else{
+                    text = Scramble.scrambleNormal(Integer.parseInt(jTextField1.getText()), "R r 2R L l 2L U u 2U F f 2F D d 2D B b 2B", "defaultSet");
+                    }
+                }
+                if("revenge".equals(cube)){
+                    if(jCheckBox1.isSelected()){
+                        text = Scramble.scrambleNormal(Integer.parseInt(jTextField1.getText()), "R r 2R U u 2U F f 2F", "defaultSet");
+                    }else{
+                    text = Scramble.scrambleNormal(Integer.parseInt(jTextField1.getText()), "R r 2R L l 2L U u 2U F f 2F D d 2D B b 2B", "defaultSet");
+                    }
+                }
+                if("vcube6".equals(cube)){
+                    if(jCheckBox1.isSelected()){
+                        text = Scramble.scrambleNormal(Integer.parseInt(jTextField1.getText()), "R 2R 3R r U 2U 3U u F 2F 3F f", "defaultSet");
+                    }else{
+                    text = Scramble.scrambleNormal(Integer.parseInt(jTextField1.getText()), "R r 2R 3R L l 2L 3L U u 2U 3U F f 2F 3F D d 2D 3D B b 2B 3B", "defaultSet");
+                    }
+                }
+                if("megaminx".equals(cube)){
+                    if(jCheckBox1.isSelected()){
+                        javax.swing.JOptionPane.showMessageDialog(jDialog1, "RFU Only is not enabled on Megaminx.");
+                    }
+                    text = Scramble.scrambleNormal(Integer.parseInt(jTextField1.getText()), "R++ R-- D++ D-- U U'", "");
+                }
             } else {
-                text = Scramble.scrambleNormal(Integer.parseInt(jTextField1.getText()), "R L U F D B", "defaultSet");
             }
-            }
-            catch(Scramble.ScrambleException e){
-                javax.swing.JOptionPane.showMessageDialog(jDialog1, e);
-            }
-            catch(java.lang.NumberFormatException e){
-               javax.swing.JOptionPane.showMessageDialog(jDialog1, "Please enter a length.");
-               text = "null";
-            }
-            jTextArea1.setText(text);
         }
+        catch(Scramble.ScrambleException e){
+            javax.swing.JOptionPane.showMessageDialog(jDialog1, e);
+        }
+        catch(java.lang.NumberFormatException e){
+            javax.swing.JOptionPane.showMessageDialog(jDialog1, "Please enter a length.");
+            text = "null";
+        }
+        jTextArea1.setText(text);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
@@ -271,6 +330,14 @@ public class JFrame extends javax.swing.JFrame {
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
         
     }//GEN-LAST:event_jCheckBox1ActionPerformed
+
+    private void jRadioButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton4ActionPerformed
+        cube="vcube6";
+    }//GEN-LAST:event_jRadioButton4ActionPerformed
+
+    private void jRadioButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton5ActionPerformed
+        cube="megaminx";
+    }//GEN-LAST:event_jRadioButton5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -321,6 +388,8 @@ public class JFrame extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JRadioButton jRadioButton3;
+    private javax.swing.JRadioButton jRadioButton4;
+    private javax.swing.JRadioButton jRadioButton5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField1;
