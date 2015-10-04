@@ -1,3 +1,6 @@
+build/classes
+build/empty
+build/generated-sources
 build/*
 build.xml
 dist.zip
