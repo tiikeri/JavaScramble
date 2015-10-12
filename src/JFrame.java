@@ -6,7 +6,7 @@
 /**
  * 
  * @author      Viktor Ahlstroem
- * @version     0.1
+ * @version     0.3
  * @since       10/2/2015
  */
 // File was generated using the NetBeans GUI Editor
@@ -35,18 +35,12 @@ public class JFrame extends javax.swing.JFrame {
         jDialog2 = new javax.swing.JDialog();
         jDialog3 = new javax.swing.JDialog();
         jDialog4 = new javax.swing.JDialog();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
         jButton1 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jCheckBox1 = new javax.swing.JCheckBox();
-        jRadioButton4 = new javax.swing.JRadioButton();
-        jRadioButton5 = new javax.swing.JRadioButton();
-        jRadioButton6 = new javax.swing.JRadioButton();
-        jRadioButton7 = new javax.swing.JRadioButton();
         jLabel2 = new javax.swing.JLabel();
+        jSpinner1 = new javax.swing.JSpinner();
+        jComboBox1 = new javax.swing.JComboBox();
 
         javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
         jFrame1.getContentPane().setLayout(jFrame1Layout);
@@ -104,40 +98,11 @@ public class JFrame extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("ScrambleApplet");
         setBackground(new java.awt.Color(102, 255, 102));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         setName("Scrambler"); // NOI18N
-
-        buttonGroup1.add(jRadioButton1);
-        jRadioButton1.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jRadioButton1.setLabel("3x3");
-        jRadioButton1.setRolloverEnabled(false);
-        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton1ActionPerformed(evt);
-            }
-        });
-
-        buttonGroup1.add(jRadioButton2);
-        jRadioButton2.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jRadioButton2.setLabel("4x4");
-        jRadioButton2.setRolloverEnabled(false);
-        jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton2ActionPerformed(evt);
-            }
-        });
-
-        buttonGroup1.add(jRadioButton3);
-        jRadioButton3.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jRadioButton3.setLabel("5x5");
-        jRadioButton3.setRolloverEnabled(false);
-        jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton3ActionPerformed(evt);
-            }
-        });
 
         jButton1.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jButton1.setText("Scramble!");
@@ -145,15 +110,6 @@ public class JFrame extends javax.swing.JFrame {
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
-            }
-        });
-
-        jTextField1.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jTextField1.setToolTipText("Scramble Length");
-        jTextField1.setName(""); // NOI18N
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
             }
         });
 
@@ -168,113 +124,53 @@ public class JFrame extends javax.swing.JFrame {
             }
         });
 
-        buttonGroup1.add(jRadioButton4);
-        jRadioButton4.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jRadioButton4.setText("6x6");
-        jRadioButton4.setRolloverEnabled(false);
-        jRadioButton4.addActionListener(new java.awt.event.ActionListener() {
+        jLabel2.setFont(new java.awt.Font("Andale Mono", 0, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "3x3", "4x4", "5x5", "6x6", "Skewb", "Pyraminx", "Megaminx" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton4ActionPerformed(evt);
+                jComboBox1ActionPerformed(evt);
             }
         });
-
-        buttonGroup1.add(jRadioButton5);
-        jRadioButton5.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jRadioButton5.setText("Megaminx");
-        jRadioButton5.setRolloverEnabled(false);
-        jRadioButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton5ActionPerformed(evt);
-            }
-        });
-
-        buttonGroup1.add(jRadioButton6);
-        jRadioButton6.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jRadioButton6.setLabel("Pyraminx");
-        jRadioButton6.setRolloverEnabled(false);
-        jRadioButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton6ActionPerformed(evt);
-            }
-        });
-
-        buttonGroup1.add(jRadioButton7);
-        jRadioButton7.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jRadioButton7.setLabel("Skewb");
-        jRadioButton7.setRolloverEnabled(false);
-        jRadioButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton7ActionPerformed(evt);
-            }
-        });
-
-        jLabel2.setFont(new java.awt.Font("Droid Sans Mono", 0, 12)); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jCheckBox1)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jRadioButton1)
-                            .addComponent(jRadioButton2)
-                            .addComponent(jRadioButton3)
-                            .addComponent(jRadioButton4)
-                            .addComponent(jRadioButton5)
-                            .addComponent(jRadioButton7)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jRadioButton6))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jCheckBox1)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(14, 14, 14))
+                        .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 260, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(13, 13, 13)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jRadioButton1)
+                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jRadioButton2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jRadioButton3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jRadioButton4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jRadioButton5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jRadioButton6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jRadioButton7)
-                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel1)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(5, 5, 5)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(2, 2, 2)
+                            .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel1))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jCheckBox1)
-                        .addGap(42, 63, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton1)))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         pack();
@@ -282,68 +178,80 @@ public class JFrame extends javax.swing.JFrame {
 
     String cube;
     
-    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
-        cube = "rubik";
-    }//GEN-LAST:event_jRadioButton1ActionPerformed
-
-    private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
-        cube = "revenge";
-    }//GEN-LAST:event_jRadioButton2ActionPerformed
-
-    private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
-        cube = "professor";
-    }//GEN-LAST:event_jRadioButton3ActionPerformed
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
         String text = null;
         try {
+            int cubeIndex = jComboBox1.getSelectedIndex();
+            switch (cubeIndex){
+                case 0: 
+                    cube = "rubik"; 
+                    break;
+                case 1: 
+                    cube = "revenge"; 
+                    break;
+                case 2:
+                    cube = "professor";
+                    break;
+                case 3:
+                    cube = "vcube6";
+                    break;
+                case 4: 
+                    cube = "skewb";
+                    break;
+                case 5:
+                    cube = "pyraminx";
+                    break;
+                case 6:
+                    cube = "megaminx";
+                    break;
+            }
             if (true){
                 if("rubik".equals(cube)){
                     if(jCheckBox1.isSelected()){
-                        text = Scramble.scrambleNormal(Integer.parseInt(jTextField1.getText()), "R F U", "defaultSet");
+                        text = Scramble.scrambleNormal(Integer.parseInt(jSpinner1.getValue().toString()), "R F U", "defaultSet");
                     }else{
-                    text = Scramble.scrambleNormal(Integer.parseInt(jTextField1.getText()), "R L U F D B", "defaultSet");
+                    text = Scramble.scrambleNormal(Integer.parseInt(jSpinner1.getValue().toString()), "R L U F D B", "defaultSet");
                     }
                 }
                 if("professor".equals(cube)){
                     if(jCheckBox1.isSelected()){
-                        text = Scramble.scrambleNormal(Integer.parseInt(jTextField1.getText()), "R r 2R U u 2U F f 2F", "defaultSet");
+                        text = Scramble.scrambleNormal(Integer.parseInt(jSpinner1.getValue().toString()), "R r 2R U u 2U F f 2F", "defaultSet");
                     }else{
-                    text = Scramble.scrambleNormal(Integer.parseInt(jTextField1.getText()), "R r 2R L l 2L U u 2U F f 2F D d 2D B b 2B", "defaultSet");
+                    text = Scramble.scrambleNormal(Integer.parseInt(jSpinner1.getValue().toString()), "R r 2R L l 2L U u 2U F f 2F D d 2D B b 2B", "defaultSet");
                     }
                 }
                 if("revenge".equals(cube)){
                     if(jCheckBox1.isSelected()){
-                        text = Scramble.scrambleNormal(Integer.parseInt(jTextField1.getText()), "R r 2R U u 2U F f 2F", "defaultSet");
+                        text = Scramble.scrambleNormal(Integer.parseInt(jSpinner1.getValue().toString()), "R r 2R U u 2U F f 2F", "defaultSet");
                     }else{
-                    text = Scramble.scrambleNormal(Integer.parseInt(jTextField1.getText()), "R r 2R L l 2L U u 2U F f 2F D d 2D B b 2B", "defaultSet");
+                    text = Scramble.scrambleNormal(Integer.parseInt(jSpinner1.getValue().toString()), "R r 2R L l 2L U u 2U F f 2F D d 2D B b 2B", "defaultSet");
                     }
                 }
                 if("vcube6".equals(cube)){
                     if(jCheckBox1.isSelected()){
-                        text = Scramble.scrambleNormal(Integer.parseInt(jTextField1.getText()), "R 2R 3R r U 2U 3U u F 2F 3F f", "defaultSet");
+                        text = Scramble.scrambleNormal(Integer.parseInt(jSpinner1.getValue().toString()), "R 2R 3R r U 2U 3U u F 2F 3F f", "defaultSet");
                     }else{
-                    text = Scramble.scrambleNormal(Integer.parseInt(jTextField1.getText()), "R r 2R 3R L l 2L 3L U u 2U 3U F f 2F 3F D d 2D 3D B b 2B 3B", "defaultSet");
+                    text = Scramble.scrambleNormal(Integer.parseInt(jSpinner1.getValue().toString()), "R r 2R 3R L l 2L 3L U u 2U 3U F f 2F 3F D d 2D 3D B b 2B 3B", "defaultSet");
                     }
                 }
                 if("megaminx".equals(cube)){
                     if(jCheckBox1.isSelected()){
                         javax.swing.JOptionPane.showMessageDialog(jDialog1, "RFU Only is not enabled on Megaminx.");
                     }
-                    text = Scramble.scrambleNormal(Integer.parseInt(jTextField1.getText()), "R++ R-- D++ D-- U U'", "");
+                    text = Scramble.scrambleNormal(Integer.parseInt(jSpinner1.getValue().toString()), "R++ R-- D++ D-- U U'", "");
                 }
                 if("pyraminx".equals(cube)){
                     if(jCheckBox1.isSelected()){
                         javax.swing.JOptionPane.showMessageDialog(jDialog1, "RFU Only is not enabled on Pyraminx.");
                     }
-                    text = Scramble.scrambleNormal(Integer.parseInt(jTextField1.getText()), "R L U B R L U B R L U B R L U B R L U B R L U B r l u b", "'  ");
+                    text = Scramble.scrambleNormal(Integer.parseInt(jSpinner1.getValue().toString()), "R L U B R L U B R L U B R L U B R L U B R L U B r l u b", "'  ");
                 }
                 if("skewb".equals(cube)){
                     if(jCheckBox1.isSelected()){
                         javax.swing.JOptionPane.showMessageDialog(jDialog1, "RFU Only is not enabled on Pyraminx.");
                     }
-                    text = Scramble.scrambleNormal(Integer.parseInt(jTextField1.getText()), "F R B L", "'  ");
+                    text = Scramble.scrambleNormal(Integer.parseInt(jSpinner1.getValue().toString()), "F R B L", "'  ");
                 }
             }
         }
@@ -357,29 +265,13 @@ public class JFrame extends javax.swing.JFrame {
         jLabel2.setText("<html><body style='width: 200px'>" + text);
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
         
     }//GEN-LAST:event_jCheckBox1ActionPerformed
 
-    private void jRadioButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton4ActionPerformed
-        cube="vcube6";
-    }//GEN-LAST:event_jRadioButton4ActionPerformed
-
-    private void jRadioButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton5ActionPerformed
-        cube="megaminx";
-    }//GEN-LAST:event_jRadioButton5ActionPerformed
-
-    private void jRadioButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton6ActionPerformed
-        cube="pyraminx";
-    }//GEN-LAST:event_jRadioButton6ActionPerformed
-
-    private void jRadioButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton7ActionPerformed
-        cube="skewb";
-    }//GEN-LAST:event_jRadioButton7ActionPerformed
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -421,6 +313,7 @@ public class JFrame extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
     private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JComboBox jComboBox1;
     private javax.swing.JDialog jDialog1;
     private javax.swing.JDialog jDialog2;
     private javax.swing.JDialog jDialog3;
@@ -428,13 +321,6 @@ public class JFrame extends javax.swing.JFrame {
     private javax.swing.JFrame jFrame1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
-    private javax.swing.JRadioButton jRadioButton5;
-    private javax.swing.JRadioButton jRadioButton6;
-    private javax.swing.JRadioButton jRadioButton7;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JSpinner jSpinner1;
     // End of variables declaration//GEN-END:variables
 }
