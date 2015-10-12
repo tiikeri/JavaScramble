@@ -7,5 +7,7 @@ A program built in Java using Swing as a GUI. This program will generate scrambl
 - Megaminx
 - Pyraminx
 - Skewb  
+
+
 *NOTE: The scrambles are generated in SiGN (Simple General Notation).*  
 Feel free to open an issue if you want me to add a cube variation, or send me an email at sno.kattunge@gmail.com.
