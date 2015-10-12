@@ -6,5 +6,4 @@ build.xml
 dist.zip
 HelloJava3.java
 manifest.mf
-dist/*
 nbproject/*
